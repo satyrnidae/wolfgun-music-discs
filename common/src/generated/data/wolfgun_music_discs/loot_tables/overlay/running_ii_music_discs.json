@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_night_i"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_tropic"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_moon_beams"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_of_plains"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_lightform"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_between_layers"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_night_ii"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_cliff_where"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_deer"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_pale_star"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_dark_southern_sky"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
+    }
+  ]
+}

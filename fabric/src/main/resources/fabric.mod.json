@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "wolfgun_music_discs",
+  "version": "${version}",
+  "name": "Wolfgun Music Discs",
+  "description": "Adds the suite of music from Wolfgun's RUNNING and RUNNING II albums as music disks.",
+  "authors": [
+    "satyrnidae (Mod Author, Textures)",
+    "Wolfgun (Music)"
+  ],
+  "contact": {
+    "homepage": "https://satyrn.dev"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.satyrn.wolfgunmusic.fabric.MainEntrypoint"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.19.2",
+    "java": ">=17",
+    "architectury": ">=6.6.92"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "wolfgun_music_discs.links.bandcamp": "https://wolfgun.bandcamp.com/",
+        "wolfgun_music_discs.links.bandcampRunning": "https://wolfgun.bandcamp.com/album/running",
+        "wolfgun_music_discs.links.bandcampRunningII": "https://wolfgun.bandcamp.com/album/running-ii"
+      },
+      "update_checker": false
+    }
+  }
+}

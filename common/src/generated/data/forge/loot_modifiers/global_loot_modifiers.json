@@ -1,0 +1,11 @@
+{
+  "entries": [
+    "wolfgun_music_discs:nova_structures/chests/stray_fort_tresure",
+    "wolfgun_music_discs:nova_structures/chests/illager_hideout_lesser_tresure",
+    "wolfgun_music_discs:nova_structures/chests/illager_hideout_heart_loot",
+    "wolfgun_music_discs:minecraft/chests/stronghold_corridor",
+    "wolfgun_music_discs:minecraft/chests/simple_dungeon",
+    "wolfgun_music_discs:minecraft/chests/ancient_city"
+  ],
+  "replace": false
+}

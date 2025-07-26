@@ -1,0 +1,178 @@
+{
+  "music_disc_after_another": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_after_another",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_between_layers": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_between_layers",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_black_dawn": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_black_dawn",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_cliff_where": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_cliff_where",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_dark_southern_sky": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_dark_southern_sky",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_deer": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_deer",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_every_morning": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_every_morning",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_far_away": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_far_away",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_into_stars": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_into_stars",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_lightform": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_lightform",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_moon_beams": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_moon_beams",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_moon_rays": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_moon_rays",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_mt_ennui": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_mt_ennui",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_night_i": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_night_i",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_night_ii": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_night_ii",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_of_plains": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_of_plains",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_pale_star": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_pale_star",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_passing": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_passing",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_peaks": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_peaks",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_throughout": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_throughout",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_tropic": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_tropic",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_unseen_land": {
+    "sounds": [
+      {
+        "name": "wolfgun_music_discs:records/music_disc_unseen_land",
+        "stream": true
+      }
+    ]
+  }
+}

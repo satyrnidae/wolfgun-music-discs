@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_every_morning"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_moon_rays"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_after_another"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_throughout"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_black_dawn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_passing"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_unseen_land"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_mt_ennui"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_peaks"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_far_away"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wolfgun_music_discs:music_disc_into_stars"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
+    }
+  ]
+}

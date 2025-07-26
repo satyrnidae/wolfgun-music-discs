@@ -1,0 +1,17 @@
+{
+  "type": "wolfgun_music_discs:overlay_loot_table",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "nova_structures:chests/illager_hideout_lesser_tresure"
+    }
+  ],
+  "loot_table": "wolfgun_music_discs:overlay/running_music_discs",
+  "rolls": {
+    "type": "minecraft:uniform",
+    "value": {
+      "max_exclusive": 1.0,
+      "min_inclusive": 0.0
+    }
+  }
+}

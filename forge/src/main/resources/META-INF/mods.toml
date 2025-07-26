@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[43,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "wolfgun_music_discs"
+version = "${version}"
+displayName = "Wolfgun Music Discs"
+authors = "satyrnidae (Mod Author, Textures), Wolfgun (Music)"
+description = '''
+Adds the suite of music from Wolfgun's RUNNING and RUNNING II albums as music disks.
+'''
+logoFile = "icon.png"
+displayURL = "https://wolfgun.bandcamp.com/"
+
+[[dependencies.wolfgun_music_discs]]
+modId = "forge"
+mandatory = true
+versionRange = "[43,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.wolfgun_music_discs]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.wolfgun_music_discs]]
+modId = "architectury"
+mandatory = true
+versionRange = "[6.6.92,)"
+ordering = "AFTER"
+side = "BOTH"

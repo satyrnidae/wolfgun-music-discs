@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.25,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "wolfgun_music_discs:overlay/running_music_discs"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
+    }
+  ]
+}
