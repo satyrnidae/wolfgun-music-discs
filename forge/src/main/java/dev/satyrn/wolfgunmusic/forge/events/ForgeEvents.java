@@ -1,7 +1,7 @@
 package dev.satyrn.wolfgunmusic.forge.events;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
-import dev.satyrn.wolfgunmusic.world.entity.npc.WolfgunMusicDiscListing;
+import dev.satyrn.wolfgunmusic.world.entity.npc.WandererMusicDiscListing;
 import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -10,6 +10,6 @@ import net.minecraftforge.fml.common.Mod;
 public final class ForgeEvents {
     @SubscribeEvent
     static void onWandererTrades(WandererTradesEvent event) {
-        event.getRareTrades().add(new WolfgunMusicDiscListing());
+        event.getRareTrades().add(new WandererMusicDiscListing());
     }
 }

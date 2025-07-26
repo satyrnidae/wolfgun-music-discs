@@ -3,7 +3,9 @@ package dev.satyrn.wolfgunmusic.world.item;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
+import dev.satyrn.wolfgunmusic.data.tags.ModItemTags;
 import dev.satyrn.wolfgunmusic.sounds.ModSoundEvents;
+import dev.satyrn.wolfgunmusic.util.NotInitializable;
 import net.minecraft.core.Registry;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.CreativeModeTab;
@@ -67,7 +69,7 @@ public final class ModItems {
     }
 
     private ModItems() {
-        throw new AssertionError("Class should not be initialized.");
+        NotInitializable.staticClass(ModItemTags.class);
     }
 
     static RegistrySupplier<Item> registerDisc(String id,

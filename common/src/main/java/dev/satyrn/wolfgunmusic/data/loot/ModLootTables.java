@@ -1,6 +1,7 @@
 package dev.satyrn.wolfgunmusic.data.loot;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
+import dev.satyrn.wolfgunmusic.util.NotInitializable;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 
@@ -16,7 +17,7 @@ public final class ModLootTables {
     public static final ResourceLocation RUNNING_II_MUSIC_DISCS = registerOverlay("running_ii_music_discs");
 
     private ModLootTables() {
-        throw new AssertionError("Class should not be initialized.");
+        NotInitializable.staticClass(ModLootTables.class);
     }
 
     public static ResourceLocation getLootModifier(ResourceLocation modifiedLootTable) {

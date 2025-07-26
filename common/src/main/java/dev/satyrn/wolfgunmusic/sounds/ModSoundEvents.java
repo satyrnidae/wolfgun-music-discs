@@ -3,6 +3,7 @@ package dev.satyrn.wolfgunmusic.sounds;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
+import dev.satyrn.wolfgunmusic.util.NotInitializable;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
@@ -61,7 +62,7 @@ public final class ModSoundEvents {
     }
 
     private ModSoundEvents() {
-        throw new AssertionError("Class should not be initialized.");
+        NotInitializable.staticClass(ModSoundEvents.class);
     }
 
     static RegistrySupplier<SoundEvent> register(String key) {

@@ -2,6 +2,7 @@ package dev.satyrn.wolfgunmusic.forge.loot;
 
 import com.mojang.serialization.Codec;
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
+import dev.satyrn.wolfgunmusic.util.NotInitializable;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -10,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public final class ModLootModifiers {
     private ModLootModifiers() {
-        throw new AssertionError("Class should not be initialized.");
+        NotInitializable.staticClass(ModLootModifiers.class);
     }
 
     public static final RegistryObject<Codec<OverlayLootTableModifier>> DISC_DUNGEON_LOOT_MODIFIER;

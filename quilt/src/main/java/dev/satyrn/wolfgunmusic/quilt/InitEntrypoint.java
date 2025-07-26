@@ -2,7 +2,7 @@ package dev.satyrn.wolfgunmusic.quilt;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
 import dev.satyrn.wolfgunmusic.api.LootTableModifierProcessor;
-import dev.satyrn.wolfgunmusic.world.entity.npc.WolfgunMusicDiscListing;
+import dev.satyrn.wolfgunmusic.world.entity.npc.WandererMusicDiscListing;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
@@ -21,6 +21,6 @@ public final class InitEntrypoint implements ModInitializer {
                         lootManager, id, tableBuilder));
 
         TradeOfferHelper.registerWanderingTraderOffers(1,
-                itemListings -> itemListings.add(new WolfgunMusicDiscListing()));
+                itemListings -> itemListings.add(new WandererMusicDiscListing()));
     }
 }

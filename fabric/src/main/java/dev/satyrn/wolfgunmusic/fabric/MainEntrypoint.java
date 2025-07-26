@@ -2,7 +2,7 @@ package dev.satyrn.wolfgunmusic.fabric;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
 import dev.satyrn.wolfgunmusic.api.LootTableModifierProcessor;
-import dev.satyrn.wolfgunmusic.world.entity.npc.WolfgunMusicDiscListing;
+import dev.satyrn.wolfgunmusic.world.entity.npc.WandererMusicDiscListing;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
@@ -24,6 +24,6 @@ public final class MainEntrypoint implements ModInitializer {
                 (resourceManager, lootManager, id, tableBuilder, source) -> LootTableModifierProcessor.modifyTables(
                         lootManager, id, tableBuilder));
         TradeOfferHelper.registerWanderingTraderOffers(1,
-                itemListings -> itemListings.add(new WolfgunMusicDiscListing()));
+                itemListings -> itemListings.add(new WandererMusicDiscListing()));
     }
 }

@@ -1,6 +1,7 @@
 package dev.satyrn.wolfgunmusic;
 
 import dev.satyrn.wolfgunmusic.sounds.ModSoundEvents;
+import dev.satyrn.wolfgunmusic.util.NotInitializable;
 import dev.satyrn.wolfgunmusic.world.item.ModItems;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,7 +11,7 @@ public final class WolfgunMusicDiscs {
     private static final Logger LOGGER = LogManager.getLogger();
 
     private WolfgunMusicDiscs() {
-        throw new AssertionError("Class should not be initialized.");
+        NotInitializable.staticClass(WolfgunMusicDiscs.class);
     }
 
     public static void preRegistrationSetup() {

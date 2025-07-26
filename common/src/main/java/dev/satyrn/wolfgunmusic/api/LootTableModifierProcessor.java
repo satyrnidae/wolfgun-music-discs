@@ -2,6 +2,7 @@ package dev.satyrn.wolfgunmusic.api;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
 import dev.satyrn.wolfgunmusic.data.loot.ModLootTables;
+import dev.satyrn.wolfgunmusic.util.NotInitializable;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -11,7 +12,7 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 
 public final class LootTableModifierProcessor {
     private LootTableModifierProcessor() {
-        throw new AssertionError("Class should not be initialized.");
+        NotInitializable.staticClass(LootTableModifierProcessor.class);
     }
 
     public static void modifyTables(LootTables lootManager, ResourceLocation id, LootTable.Builder tableBuilder) {

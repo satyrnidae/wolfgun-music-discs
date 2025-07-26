@@ -8,6 +8,7 @@ import dev.satyrn.wolfgunmusic.forge.data.provider.server.ModBlockTagsProvider;
 import dev.satyrn.wolfgunmusic.forge.data.provider.server.ModItemTagsProvider;
 import dev.satyrn.wolfgunmusic.forge.data.provider.server.ModGlobalLootModifierProvider;
 import dev.satyrn.wolfgunmusic.forge.data.provider.server.ModLootTableProvider;
+import dev.satyrn.wolfgunmusic.util.NotInitializable;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
@@ -17,7 +18,7 @@ import static net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 @EventBusSubscriber(modid = WolfgunMusicDiscs.MOD_ID, bus = Bus.MOD)
 public final class DataEvents {
     private DataEvents() {
-        throw new AssertionError("Class should not be instantiated.");
+        NotInitializable.staticClass(DataEvents.class);
     }
 
     @SubscribeEvent
