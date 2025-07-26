@@ -1,15 +1,11 @@
 package dev.satyrn.wolfgunmusic.fabric;
 
-import dev.architectury.event.events.common.LifecycleEvent;
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
-import dev.satyrn.wolfgunmusic.api.WanderingTradesHelper;
 import dev.satyrn.wolfgunmusic.api.LootTableModifierProcessor;
+import dev.satyrn.wolfgunmusic.world.entity.npc.WolfgunMusicDiscListing;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
-import net.minecraft.world.entity.npc.VillagerTrades;
-
-import java.util.List;
 
 public final class MainEntrypoint implements ModInitializer {
 
@@ -24,14 +20,10 @@ public final class MainEntrypoint implements ModInitializer {
 
         WolfgunMusicDiscs.info("Hooking into loot tables");
 
-        LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
-            LootTableModifierProcessor.modifyTables( lootManager, id, tableBuilder);
-        }));
-
-        LifecycleEvent.SERVER_STARTED.register(
-                server -> TradeOfferHelper.registerWanderingTraderOffers(1, itemListings -> {
-                    final List<VillagerTrades.ItemListing> musicDiscTrades = WanderingTradesHelper.getAllMusicDiscTrades();
-                    itemListings.addAll(musicDiscTrades);
-                }));
+        LootTableEvents.MODIFY.register(
+                (resourceManager, lootManager, id, tableBuilder, source) -> LootTableModifierProcessor.modifyTables(
+                        lootManager, id, tableBuilder));
+        TradeOfferHelper.registerWanderingTraderOffers(1,
+                itemListings -> itemListings.add(new WolfgunMusicDiscListing()));
     }
 }

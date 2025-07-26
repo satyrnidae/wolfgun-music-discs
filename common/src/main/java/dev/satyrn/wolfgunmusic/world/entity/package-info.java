@@ -1,5 +1,5 @@
 @VariablesAreNonnullByDefault @FieldsAreNonnullByDefault @ParametersAreNonnullByDefault @MethodsReturnNonnullByDefault
-package dev.satyrn.wolfgunmusic.util;
+package dev.satyrn.wolfgunmusic.world.entity;
 
 import dev.satyrn.wolfgunmusic.annotations.VariablesAreNonnullByDefault;
 import net.minecraft.FieldsAreNonnullByDefault;
