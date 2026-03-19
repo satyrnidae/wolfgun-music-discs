@@ -1,3 +1,12 @@
+# architectury
+
+/.architectury-transformer
+
+# local-only files
+
+*.local.*
+*.developer.*
+
 # gradle
 
 .gradle/
@@ -33,6 +42,9 @@ bin/
 
 run/
 
-# actual songs which i can't upload here.
+# neoforge
 
-common/src/main/resources/assets/wolfgun_music_discs/sounds/records/*.ogg
+/common/src/generated/resources/.cache
+
+# actual songs which i can't upload here.
+*.ogg
