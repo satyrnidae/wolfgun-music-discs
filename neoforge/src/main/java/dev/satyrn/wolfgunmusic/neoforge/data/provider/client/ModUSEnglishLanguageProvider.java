@@ -1,16 +1,16 @@
-package dev.satyrn.wolfgunmusic.forge.data.provider.client;
+package dev.satyrn.wolfgunmusic.neoforge.data.provider.client;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
 import dev.satyrn.wolfgunmusic.world.item.ModItems;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.common.data.LanguageProvider;
+import net.neoforged.neoforge.common.data.LanguageProvider;
 
 import java.util.function.Supplier;
 
 public final class ModUSEnglishLanguageProvider extends LanguageProvider {
-    public ModUSEnglishLanguageProvider(DataGenerator gen, String modid) {
-        super(gen, modid, "en_us");
+    public ModUSEnglishLanguageProvider(PackOutput output, String modid) {
+        super(output, modid, "en_us");
     }
 
     @Override
@@ -64,6 +64,8 @@ public final class ModUSEnglishLanguageProvider extends LanguageProvider {
         this.add(WolfgunMusicDiscs.MOD_ID + ".links.bandcamp", "Wolfgun's Bandcamp");
         this.add(WolfgunMusicDiscs.MOD_ID + ".links.bandcampRunning", "Download RUNNING on Bandcamp");
         this.add(WolfgunMusicDiscs.MOD_ID + ".links.bandcampRunningII", "Download RUNNING II on Bandcamp");
+
+        this.add("pack.wolfgun_music_discs.stereo_sounds.title", "RUNNING/II Stereo Music Discs");
     }
 
     private void addRecord(Supplier<Item> item) {

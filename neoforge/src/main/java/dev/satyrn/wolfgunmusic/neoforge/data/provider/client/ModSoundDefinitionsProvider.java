@@ -1,13 +1,13 @@
-package dev.satyrn.wolfgunmusic.forge.data.provider.client;
+package dev.satyrn.wolfgunmusic.neoforge.data.provider.client;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
 import dev.satyrn.wolfgunmusic.sounds.ModSoundEvents;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.common.data.SoundDefinition;
-import net.minecraftforge.common.data.SoundDefinitionsProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.common.data.SoundDefinition;
+import net.neoforged.neoforge.common.data.SoundDefinitionsProvider;
 
 import javax.annotation.Nullable;
 import java.util.function.Supplier;
@@ -17,12 +17,12 @@ public final class ModSoundDefinitionsProvider extends SoundDefinitionsProvider 
     /**
      * Creates a new instance of this data provider.
      *
-     * @param generator The data generator instance provided by the event you are initializing this provider in.
-     * @param modId     The mod ID of the current mod.
-     * @param helper    The existing file helper provided by the event you are initializing this provider in.
+     * @param output The pack output instance provided by the event you are initializing this provider in.
+     * @param modId  The mod ID of the current mod.
+     * @param helper The existing file helper provided by the event you are initializing this provider in.
      */
-    public ModSoundDefinitionsProvider(DataGenerator generator, String modId, ExistingFileHelper helper) {
-        super(generator, modId, helper);
+    public ModSoundDefinitionsProvider(PackOutput output, String modId, ExistingFileHelper helper) {
+        super(output, modId, helper);
     }
 
     @Override

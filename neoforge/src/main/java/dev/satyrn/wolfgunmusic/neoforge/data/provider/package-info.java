@@ -1,5 +1,5 @@
 @VariablesAreNonnullByDefault @FieldsAreNonnullByDefault @ParametersAreNonnullByDefault @MethodsReturnNonnullByDefault
-package dev.satyrn.wolfgunmusic.forge;
+package dev.satyrn.wolfgunmusic.neoforge.data.provider;
 
 import dev.satyrn.wolfgunmusic.annotations.VariablesAreNonnullByDefault;
 import net.minecraft.FieldsAreNonnullByDefault;

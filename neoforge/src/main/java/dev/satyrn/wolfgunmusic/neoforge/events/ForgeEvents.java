@@ -1,12 +1,12 @@
-package dev.satyrn.wolfgunmusic.forge.events;
+package dev.satyrn.wolfgunmusic.neoforge.events;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
 import dev.satyrn.wolfgunmusic.world.entity.npc.WandererMusicDiscListing;
-import net.minecraftforge.event.village.WandererTradesEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
-@Mod.EventBusSubscriber(modid = WolfgunMusicDiscs.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+@EventBusSubscriber(modid = WolfgunMusicDiscs.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
 public final class ForgeEvents {
     @SubscribeEvent
     static void onWandererTrades(WandererTradesEvent event) {

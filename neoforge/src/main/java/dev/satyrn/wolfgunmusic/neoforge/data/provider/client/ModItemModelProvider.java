@@ -1,14 +1,14 @@
-package dev.satyrn.wolfgunmusic.forge.data.provider.client;
+package dev.satyrn.wolfgunmusic.neoforge.data.provider.client;
 
 import dev.satyrn.wolfgunmusic.world.item.ModItems;
-import net.minecraft.data.DataGenerator;
-import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraft.data.PackOutput;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 
 public final class ModItemModelProvider extends ItemModelProvider {
-    public ModItemModelProvider(DataGenerator generator, String modid, ExistingFileHelper existingFileHelper) {
-        super(generator, modid, existingFileHelper);
+    public ModItemModelProvider(PackOutput output, String modid, ExistingFileHelper existingFileHelper) {
+        super(output, modid, existingFileHelper);
     }
 
     @Override

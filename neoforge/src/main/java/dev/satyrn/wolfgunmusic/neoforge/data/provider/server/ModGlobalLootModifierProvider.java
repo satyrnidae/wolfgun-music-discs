@@ -1,21 +1,26 @@
-package dev.satyrn.wolfgunmusic.forge.data.provider.server;
+package dev.satyrn.wolfgunmusic.neoforge.data.provider.server;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
 import dev.satyrn.wolfgunmusic.data.loot.ModLootTables;
-import dev.satyrn.wolfgunmusic.forge.loot.OverlayLootTableModifier;
-import net.minecraft.data.DataGenerator;
+import dev.satyrn.wolfgunmusic.neoforge.loot.OverlayLootTableModifier;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.valueproviders.UniformFloat;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
+import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraftforge.common.data.GlobalLootModifierProvider;
-import net.minecraftforge.common.loot.LootTableIdCondition;
+import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
+import net.neoforged.neoforge.common.loot.LootTableIdCondition;
 
 import javax.annotation.Nullable;
+import java.util.concurrent.CompletableFuture;
 
 public final class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
-    public ModGlobalLootModifierProvider(DataGenerator gen, String modid) {
-        super(gen, modid);
+    public ModGlobalLootModifierProvider(PackOutput output,
+                                         CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, WolfgunMusicDiscs.MOD_ID);
     }
 
     @Override
@@ -29,7 +34,7 @@ public final class ModGlobalLootModifierProvider extends GlobalLootModifierProvi
         this.addOverlay("nova_structures", "chests/stray_fort_tresure", ModLootTables.WOLFGUN_MUSIC_DISCS);
     }
 
-    private void addOverlay(String namespace, String path, ResourceLocation overlay) {
+    private void addOverlay(String namespace, String path, ResourceKey<LootTable> overlay) {
         WolfgunMusicDiscs.info("Adding global loot modifier {}:{}/{}", WolfgunMusicDiscs.MOD_ID, namespace, path);
         final @Nullable ResourceLocation lootTable = ResourceLocation.tryBuild(namespace, path);
         if (lootTable == null) {
@@ -37,10 +42,14 @@ public final class ModGlobalLootModifierProvider extends GlobalLootModifierProvi
         }
         this.add(namespace + "/" + path,
                 new OverlayLootTableModifier(new LootItemCondition[]{LootTableIdCondition.builder(lootTable).build()},
-                        UniformFloat.of(0.0F, 1.0F), 0.25F, overlay));
+                        UniformFloat.of(0.0F, 1.0F), 0.25F, overlay.location()));
     }
 
-    private void addOverlay(ResourceLocation lootTable, ResourceLocation overlay) {
+    private void addOverlay(ResourceKey<?> resourceKey, ResourceKey<LootTable> overlay) {
+        this.addOverlay(resourceKey.location(), overlay);
+    }
+
+    private void addOverlay(ResourceLocation lootTable, ResourceKey<LootTable> overlay) {
         this.addOverlay(lootTable.getNamespace(), lootTable.getPath(), overlay);
     }
 
