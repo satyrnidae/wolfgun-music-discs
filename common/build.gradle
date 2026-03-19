@@ -4,7 +4,7 @@ architectury {
 
 sourceSets {
     main {
-        resources.srcDir file("src/generated")
+        resources.srcDir file("src/generated/resources")
     }
 }
 
