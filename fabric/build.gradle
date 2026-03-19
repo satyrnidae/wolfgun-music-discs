@@ -9,6 +9,7 @@ architectury {
 
 loom {
     mixin {
+        useLegacyMixinAp = true
         defaultRefmapName = "${project.rootProject.name}.fabric.refmap.json"
     }
 }

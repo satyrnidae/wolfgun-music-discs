@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.25,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "wolfgun_music_discs:overlay/running_ii_music_discs"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
+    }
+  ],
+  "random_sequence": "wolfgun_music_discs:modifier/nova_structures/chests/illager_hideout_heart_loot"
+}

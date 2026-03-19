@@ -1,0 +1,8 @@
+{
+  "comparator_output": 8,
+  "description": {
+    "translate": "item.wolfgun_music_discs.music_disc_cliff_where.desc"
+  },
+  "length_in_seconds": 210.0,
+  "sound_event": "wolfgun_music_discs:music_disc_cliff_where"
+}

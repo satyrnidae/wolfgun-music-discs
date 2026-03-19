@@ -1,0 +1,8 @@
+{
+  "comparator_output": 6,
+  "description": {
+    "translate": "item.wolfgun_music_discs.music_disc_between_layers.desc"
+  },
+  "length_in_seconds": 212.0,
+  "sound_event": "wolfgun_music_discs:music_disc_between_layers"
+}

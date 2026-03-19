@@ -13,6 +13,7 @@ architectury {
 
 loom {
     mixin {
+        useLegacyMixinAp = true
         defaultRefmapName = "${project.rootProject.name}.quilt.refmap.json"
     }
 }

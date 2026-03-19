@@ -2,7 +2,7 @@ package dev.satyrn.wolfgunmusic.data.tags;
 
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
 import dev.satyrn.wolfgunmusic.util.NotInitializable;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
@@ -31,6 +31,6 @@ public final class ModItemTags {
         if (resourceLocation == null) {
             throw new IllegalStateException("Failed to create an item tag key for " + name);
         }
-        return TagKey.create(Registry.ITEM_REGISTRY, resourceLocation);
+        return TagKey.create(Registries.ITEM, resourceLocation);
     }
 }

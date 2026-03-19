@@ -1,0 +1,8 @@
+{
+  "comparator_output": 5,
+  "description": {
+    "translate": "item.wolfgun_music_discs.music_disc_black_dawn.desc"
+  },
+  "length_in_seconds": 161.0,
+  "sound_event": "wolfgun_music_discs:music_disc_black_dawn"
+}

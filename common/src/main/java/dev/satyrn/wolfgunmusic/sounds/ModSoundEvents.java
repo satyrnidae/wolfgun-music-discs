@@ -4,7 +4,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import dev.satyrn.wolfgunmusic.WolfgunMusicDiscs;
 import dev.satyrn.wolfgunmusic.util.NotInitializable;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 
@@ -34,7 +34,7 @@ public final class ModSoundEvents {
     public static final RegistrySupplier<SoundEvent> MUSIC_DISC_TROPIC;
     public static final RegistrySupplier<SoundEvent> MUSIC_DISC_UNSEEN_LAND;
     static final DeferredRegister<SoundEvent> REGISTRAR = DeferredRegister.create(WolfgunMusicDiscs.MOD_ID,
-            Registry.SOUND_EVENT_REGISTRY);
+            Registries.SOUND_EVENT);
 
     static {
         MUSIC_DISC_AFTER_ANOTHER = register("music_disc_after_another");
@@ -71,7 +71,7 @@ public final class ModSoundEvents {
         if (resourceLocation == null) {
             throw new IllegalStateException("Failed to create key " + WolfgunMusicDiscs.MOD_ID + ":" + key);
         }
-        return REGISTRAR.register(key, () -> new SoundEvent(resourceLocation));
+        return REGISTRAR.register(key, () -> SoundEvent.createVariableRangeEvent(resourceLocation));
     }
 
     public static void register() {

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 10,
+  "description": {
+    "translate": "item.wolfgun_music_discs.music_disc_far_away.desc"
+  },
+  "length_in_seconds": 160.0,
+  "sound_event": "wolfgun_music_discs:music_disc_far_away"
+}

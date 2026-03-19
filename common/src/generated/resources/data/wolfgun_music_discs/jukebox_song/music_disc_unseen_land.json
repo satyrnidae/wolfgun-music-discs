@@ -1,0 +1,8 @@
+{
+  "comparator_output": 7,
+  "description": {
+    "translate": "item.wolfgun_music_discs.music_disc_unseen_land.desc"
+  },
+  "length_in_seconds": 193.0,
+  "sound_event": "wolfgun_music_discs:music_disc_unseen_land"
+}
